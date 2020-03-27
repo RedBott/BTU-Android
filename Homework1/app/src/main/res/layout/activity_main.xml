@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@mipmap/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:paddingHorizontal="10dp"
+        android:background="#80FFFFFF"
+        android:hint="Enter Your Email"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:paddingHorizontal="10dp"
+        android:background="#80FFFFFF"
+        android:hint="Password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/logInButton"
+        android:textSize="18sp"
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Login"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    
+
+</FrameLayout>
