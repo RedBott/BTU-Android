@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Homework_two</string>
+    <string name="my_first_name">Andrei</string>
+    <string name="my_second_name">Tsitsividze</string>
+    <string name="my_birth_year">1999</string>
+    <string name="my_gender">male</string>
+    <string name="my_email">andrei.tsitsvidze.1@btu.edu.ge</string>
+</resources>
