@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:contentDescription="@string/background_image_description"
+        android:id="@+id/background_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/main_background"
+        android:scaleType="centerCrop"/>
+<LinearLayout
+    android:id="@+id/main_wrapper"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/introduction_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introduction"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1.5"/>
+    <Button
+        android:id="@+id/programming_jokes_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/programming_jokes_text"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:shadowDy="0"
+        android:shadowDx="0"
+        android:shadowRadius="4"
+        android:background="@drawable/odd_joke_buttons_shape"/>
+    <Button
+        android:id="@+id/dark_jokes_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dark_jokes_text"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:shadowDy="0"
+        android:shadowDx="0"
+        android:shadowRadius="4"
+        android:background="@drawable/even_joke_buttons_shape"/>
+    <Button
+        android:id="@+id/misc_jokes_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/misc_jokes_text"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:shadowDy="0"
+        android:shadowDx="0"
+        android:shadowRadius="4"
+        android:background="@drawable/odd_joke_buttons_shape"/>
+
+
+    <LinearLayout
+        android:id="@+id/logout_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        tools:ignore="Suspicious0dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout_text"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:background="@drawable/logout_button_shape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+</FrameLayout>

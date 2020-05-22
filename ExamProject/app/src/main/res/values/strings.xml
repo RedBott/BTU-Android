@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExamProject</string>
+    <string name="logout_text">Sign Out</string>
+    <string name="introduction">Tell me a joke about…</string>
+    <string name="programming_jokes_text">Programming!</string>
+    <string name="dark_jokes_text">Dark themes!</string>
+    <string name="misc_jokes_text">Miscellaneous stuff! </string>
+    <string name="background_image_description">Background Image</string>
+</resources>
