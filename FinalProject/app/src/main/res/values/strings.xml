@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="background_image_description">Background Image</string>
+    <string name="logout_text">Sign Out</string>
+    <string name="search_text">Search</string>
+    <string name="enter_topic">Enter topic</string>
+    <string name="select_country">Select Country</string>
+    <string name="question">Question</string>
+    <string name="answer">Answer</string>
+    <string name="title">Title</string>
+    <string name="description">description</string>
+</resources>

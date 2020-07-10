@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:contentDescription="@string/background_image_description"
+        android:id="@+id/background_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/background_color"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:id="@+id/main_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="5dp"
+            >
+            <EditText
+                android:id="@+id/search_topic_edit_text"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:hint="@string/enter_topic"
+                android:inputType="text" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/search_text"
+                android:textColor="@android:color/black"
+                android:background="#29CCC7"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_country"
+            android:layout_marginTop="54dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="5dp">
+            <Spinner
+                android:id="@+id/country_spinner"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="#D2F8F7"/>
+            <TextView
+                android:id="@+id/selected_country_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            tools:ignore="Suspicious0dp">
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/logout_button_shape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="@string/logout_text"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
